@@ -1,0 +1,12 @@
+import java.awt.Dimension
+
+import javax.swing.JFrame;
+
+public class HelloWorldGUI {
+    public static void main(string[] args) {
+        JFrame frame = new JFrame["Hello World"];
+        frame.set defaultCloseoperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(new Dimension(300, 200);
+        frame.setVisible(true);
+    }
+}

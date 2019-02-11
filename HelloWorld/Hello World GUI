@@ -1,0 +1,15 @@
+#GUI - Graphical User Interface
+#Functions - A small segment of code that can be run.
+#Module - A collection or Functions that the user can call upon.
+from tkinter import *
+
+
+#Step 1: Create a main window
+root = Tk()
+
+#Step 2: Create a Label Widget
+word = Label(root,text="Hello World")
+word.pack()
+
+#Pop up main window and wait for user action
+root.mainloop()

@@ -1,10 +1,11 @@
 from tkinter import*
 
 T = Tk()
-T.geometry("240x258")
+T.geometry("390x258")
 T.title("TicTacToe")
 
 turn = 'X'
+
 def toggle():
     global turn
     if turn=='X':
@@ -12,19 +13,7 @@ def toggle():
     else:
         turn = 'X'
 
-def b0_pressed():
-    if b0.cget('text') == 'X':
-        b0.config(text=turn)
-    else:
-        b0.config(text=turn)
-    toggle()
-
-b0 = Button(T, text=" ", command=b0_pressed)
-b0.grid()
-b0.config(width=10, height=5)
-
 def b1_pressed():
-    global turn
     if b1.cget('text') == 'X':
         b1.config(text=turn)
     else:
@@ -36,6 +25,7 @@ b1.grid()
 b1.config(width=10, height=5)
 
 def b2_pressed():
+    global turn
     if b2.cget('text') == 'X':
         b2.config(text=turn)
     else:
@@ -81,9 +71,9 @@ b5.config(width=10, height=5)
 
 def b6_pressed():
     if b6.cget('text') == 'X':
-        b6.config(text='X')
+        b6.config(text=turn)
     else:
-        b6.config(text="X")
+        b6.config(text=turn)
     toggle()
 
 b6 = Button(T, text=" ", command=b6_pressed)
@@ -112,16 +102,55 @@ b8 = Button(T, text=" ", command=b8_pressed)
 b8.grid()
 b8.config(width=10, height=5)
 
-b0.grid(row=1, column=1)
-b1.grid(row=1, column=2)
-b2.grid(row=1, column=3)
+def b9_pressed():
+    if b9.cget('text') == 'X':
+        b9.config(text=turn)
+    else:
+        b9.config(text=turn)
+    toggle()
 
-b3.grid(row=2, column=1)
-b4.grid(row=2, column=2)
-b5.grid(row=2, column=3)
+b9 = Button(T, text=" ", command=b9_pressed)
+b9.grid()
+b9.config(width=10, height=5)
+
+
+def com_press():
+    print(' ')
+
+
+com = Button(T, text="Computer vs Human", command=com_press)
+com.grid()
+com.config(height=5, width=20)
+
+def player_press():
+    print(' ')
+
+player = Button(T, text="Player vs Player", command=player_press)
+player.grid()
+player.config(height=5, width=20)
+
+def reset():
+    print(' ')
+
+reset = Button(T, text="Reset", command=reset)
+reset.grid()
+reset.config(height=5, width=20)
+
+b1.grid(row=1, column=1)
+b2.grid(row=1, column=2)
+b3.grid(row=1, column=3)
+
+b4.grid(row=2, column=1)
+b5.grid(row=2, column=2)
+b6.grid(row=2, column=3)
 
 b6.grid(row=3, column=1)
 b7.grid(row=3, column=2)
 b8.grid(row=3, column=3)
+
+b9.grid(row=2, column=3)
+com.grid(row=1, column=4)
+player.grid(row=2, column=4)
+reset.grid(row=3, column=4)
 
 T.mainloop()

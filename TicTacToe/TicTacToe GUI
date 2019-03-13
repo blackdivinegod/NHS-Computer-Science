@@ -151,6 +151,6 @@ b8.grid(row=3, column=3)
 b9.grid(row=2, column=3)
 com.grid(row=1, column=4)
 player.grid(row=2, column=4)
-reset.grid(row=3, column=4)
 
+reset.grid(row=3, column=4)
 T.mainloop()

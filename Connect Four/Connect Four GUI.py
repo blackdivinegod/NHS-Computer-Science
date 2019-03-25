@@ -21,7 +21,7 @@ def callback(event):
         frame_1.config(bg=turn)
     toggle()
 
-frame_1 = Frame(cf, width=100, height=100)
+frame_1 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_1.bind("<Button-1>", callback)
 frame_1.grid(row=1, column=1)
 
@@ -43,7 +43,7 @@ def callback(event):
         frame_3.config(bg=turn)
     toggle()
 
-frame_3 = Frame(cf, width=100, height=100)
+frame_3 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_3.bind("<Button-1>", callback)
 frame_3.grid(row=1, column=3)
 
@@ -65,7 +65,7 @@ def callback(event):
         frame_5.config(bg=turn)
     toggle()
 
-frame_5 = Frame(cf, width=100, height=100)
+frame_5 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_5.bind("<Button-1>", callback)
 frame_5.grid(row=1, column=5)
 
@@ -87,7 +87,7 @@ def callback(event):
         frame_7.config(bg=turn)
     toggle()
 
-frame_7 = Frame(cf, width=100, height=100)
+frame_7 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_7.bind("<Button-1>", callback)
 frame_7.grid(row=1, column=7)
 
@@ -109,7 +109,7 @@ def callback(event):
         frame_9.config(bg=turn)
     toggle()
 
-frame_9 = Frame(cf, width=100, height=100)
+frame_9 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_9.bind("<Button-1>", callback)
 frame_9.grid(row=2, column=2)
 
@@ -131,7 +131,7 @@ def callback(event):
         frame_11.config(bg=turn)
     toggle()
 
-frame_11 = Frame(cf, width=100, height=100)
+frame_11 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_11.bind("<Button-1>", callback)
 frame_11.grid(row=2, column=4)
 
@@ -153,7 +153,7 @@ def callback(event):
         frame_13.config(bg=turn)
     toggle()
 
-frame_13 = Frame(cf, width=100, height=100)
+frame_13 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_13.bind("<Button-1>", callback)
 frame_13.grid(row=2, column=6)
 
@@ -175,7 +175,7 @@ def callback(event):
         frame_15.config(bg=turn)
     toggle()
 
-frame_15 = Frame(cf, width=100, height=100)
+frame_15 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_15.bind("<Button-1>", callback)
 frame_15.grid(row=3, column=1)
 
@@ -197,7 +197,7 @@ def callback(event):
         frame_17.config(bg=turn)
     toggle()
 
-frame_17 = Frame(cf, width=100, height=100)
+frame_17 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_17.bind("<Button-1>", callback)
 frame_17.grid(row=3, column=3)
 
@@ -219,7 +219,7 @@ def callback(event):
         frame_19.config(bg=turn)
     toggle()
 
-frame_19 = Frame(cf, width=100, height=100)
+frame_19 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_19.bind("<Button-1>", callback)
 frame_19.grid(row=3, column=5)
 
@@ -241,7 +241,7 @@ def callback(event):
         frame_21.config(bg=turn)
     toggle()
 
-frame_21 = Frame(cf, width=100, height=100)
+frame_21 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_21.bind("<Button-1>", callback)
 frame_21.grid(row=3, column=7)
 
@@ -263,7 +263,7 @@ def callback(event):
         frame_23.config(bg=turn)
     toggle()
 
-frame_23 = Frame(cf, width=100, height=100)
+frame_23 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_23.bind("<Button-1>", callback)
 frame_23.grid(row=4, column=2)
 
@@ -285,7 +285,7 @@ def callback(event):
         frame_25.config(bg=turn)
     toggle()
 
-frame_25 = Frame(cf, width=100, height=100)
+frame_25 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_25.bind("<Button-1>", callback)
 frame_25.grid(row=4, column=4)
 
@@ -307,7 +307,7 @@ def callback(event):
         frame_27.config(bg=turn)
     toggle()
 
-frame_27 = Frame(cf, width=100, height=100)
+frame_27 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_27.bind("<Button-1>", callback)
 frame_27.grid(row=4, column=6)
 
@@ -329,7 +329,7 @@ def callback(event):
         frame_29.config(bg=turn)
     toggle()
 
-frame_29 = Frame(cf, width=100, height=100)
+frame_29 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_29.bind("<Button-1>", callback)
 frame_29.grid(row=5, column=1)
 
@@ -339,6 +339,7 @@ def callback(event):
     else:
         frame_30.config(bg=turn)
     toggle()
+
 
 frame_30 = Frame(cf, width=100, height=100)
 frame_30.bind("<Button-1>", callback)
@@ -351,7 +352,8 @@ def callback(event):
         frame_31.config(bg=turn)
     toggle()
 
-frame_31 = Frame(cf, width=100, height=100)
+
+frame_31 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_31.bind("<Button-1>", callback)
 frame_31.grid(row=5, column=3)
 
@@ -375,7 +377,7 @@ def callback(event):
     toggle()
 
 
-frame_33 = Frame(cf, width=100, height=100)
+frame_33 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_33.bind("<Button-1>", callback)
 frame_33.grid(row=5, column=5)
 
@@ -398,7 +400,7 @@ def callback(event):
         frame_35.config(bg=turn)
     toggle()
 
-frame_35 = Frame(cf, width=100, height=100)
+frame_35 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_35.bind("<Button-1>", callback)
 frame_35.grid(row=5, column=7)
 
@@ -420,7 +422,8 @@ def callback(event):
         frame_37.config(bg=turn)
     toggle()
 
-frame_37 = Frame(cf, width=100, height=100)
+
+frame_37 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_37.bind("<Button-1>", callback)
 frame_37.grid(row=6, column=2)
 
@@ -430,6 +433,7 @@ def callback(event):
     else:
         frame_38.config(bg=turn)
     toggle()
+
 
 frame_38 = Frame(cf, width=100, height=100)
 frame_38.bind("<Button-1>", callback)
@@ -442,7 +446,8 @@ def callback(event):
         frame_39.config(bg=turn)
     toggle()
 
-frame_39 = Frame(cf, width=100, height=100)
+
+frame_39 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_39.bind("<Button-1>", callback)
 frame_39.grid(row=6, column=4)
 
@@ -452,6 +457,7 @@ def callback(event):
     else:
         frame_40.config(bg=turn)
     toggle()
+
 
 frame_40 = Frame(cf, width=100, height=100)
 frame_40.bind("<Button-1>", callback)
@@ -464,7 +470,7 @@ def callback(event):
         frame_41.config(bg=turn)
     toggle()
 
-frame_41 = Frame(cf, width=100, height=100)
+frame_41 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_41.bind("<Button-1>", callback)
 frame_41.grid(row=6, column=6)
 
@@ -486,7 +492,7 @@ def callback(event):
         frame_43.config(bg=turn)
     toggle()
 
-frame_43 = Frame(cf, width=100, height=100)
+frame_43 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_43.bind("<Button-1>", callback)
 frame_43.grid(row=7, column=1)
 
@@ -508,7 +514,7 @@ def callback(event):
         frame_45.config(bg=turn)
     toggle()
 
-frame_45 = Frame(cf, width=100, height=100)
+frame_45 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_45.bind("<Button-1>", callback)
 frame_45.grid(row=7, column=3)
 
@@ -530,7 +536,7 @@ def callback(event):
         frame_47.config(bg=turn)
     toggle()
 
-frame_47 = Frame(cf, width=100, height=100)
+frame_47 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_47.bind("<Button-1>", callback)
 frame_47.grid(row=7, column=5)
 
@@ -552,7 +558,7 @@ def callback(event):
         frame_49.config(bg=turn)
     toggle()
 
-frame_49 = Frame(cf, width=100, height=100)
+frame_49 = Frame(cf, width=100, height=100, bd=1, relief=SUNKEN)
 frame_49.bind("<Button-1>", callback)
 frame_49.grid(row=7, column=7)
 

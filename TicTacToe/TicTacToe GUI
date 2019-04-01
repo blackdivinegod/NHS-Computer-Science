@@ -113,21 +113,33 @@ b9 = Button(T, text=" ", command=b9_pressed)
 b9.grid()
 b9.config(width=10, height=5)
 
-
 def com_press():
-    print(' ')
+    global turn
 
+    print(b1.cget('text'))
+    if b1.cget('text') == ' ':
+        b1.config(text=turn)
+    elif b2.cget('text') == ' ':
+        b2.config(text=turn)
+    elif b3.cget('text') == ' ':
+        b3.config(text=turn)
+    elif b4.cget('text') == ' ':
+        b4.config(text=turn)
+    elif b5.cget('text') == ' ':
+        b5.config(text=turn)
+    elif b6.cget('text') == ' ':
+        b6.config(text=turn)
+    elif b7.cget('text') == ' ':
+        b7.config(text=turn)
+    elif b8.cget('text') == ' ':
+        b8.config(text=turn)
+    elif b9.cget('text') == ' ':
+        b9.config(text=turn)
+    toggle()
 
 com = Button(T, text="Computer vs Human", command=com_press)
 com.grid()
 com.config(height=5, width=20)
-
-def player_press():
-    print(' ')
-
-player = Button(T, text="Player vs Player", command=player_press)
-player.grid()
-player.config(height=5, width=20)
 
 def reset():
     print(' ')
@@ -150,7 +162,6 @@ b8.grid(row=3, column=3)
 
 b9.grid(row=2, column=3)
 com.grid(row=1, column=4)
-player.grid(row=2, column=4)
 
-reset.grid(row=3, column=4)
+reset.grid(row=2, column=4)
 T.mainloop()
